@@ -1,0 +1,142 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+/* body css starts from here... */
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: ivory;
+}
+/* navbar css starts from here.... */
+.background {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background-blend-mode: darken;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Make sure the z-index is higher than the carousel */
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+
+
+}
+
+.nav-title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 16px;
+    padding-left: 35px;
+
+}
+
+
+
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: grey;
+
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-toggle::after {
+
+    margin-left: 0.25rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #02a2de;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: medium;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+.content {
+    margin: 3% 4%;
+}
+
+li {
+    font-weight: bold;
+}
+
+/* image styles */
+.content-image {
+    align-items: center;
+    justify-content: center;
+    margin: 0% 0%;
+}
+
+.subimg {
+    height: 775px;
+    width: 1519px;
+    position: sticky;
+}
+
+/* footer css starts here..  */
+.footer-style {
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    text-shadow: 2px 2px 4px #000000;
+}
